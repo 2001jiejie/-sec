@@ -152,3 +152,201 @@
   --docsearch-primary-color: var(--vp-c-brand-1) !important;
 }
 
+/**
+ * 毛玻璃效果主题 - 网络安全风格
+ * -------------------------------------------------------------------------- */
+
+/* 网络安全主题色彩 */
+.dark {
+  /* 主色调 - 黑客风格的绿色和蓝色 */
+  --vp-c-brand-1: #00d9ff;
+  --vp-c-brand-2: #00bfff;
+  --vp-c-brand-3: #0099cc;
+  --vp-c-accent: #00ff88;
+  --vp-c-accent-soft: rgba(0, 255, 136, 0.1);
+  
+  /* 背景色 - 深黑色系 */
+  --vp-c-bg: rgba(0, 0, 0, 0.95);
+  --vp-c-bg-alt: rgba(0, 0, 0, 0.8);
+  --vp-c-bg-soft: rgba(0, 0, 0, 0.6);
+  --vp-c-bg-glass: rgba(0, 0, 0, 0.3);
+  
+  /* 毛玻璃效果变量 */
+  --glass-bg: rgba(0, 0, 0, 0.2);
+  --glass-border: rgba(0, 217, 255, 0.2);
+  --glass-shadow: 0 8px 32px rgba(0, 217, 255, 0.1);
+  --glass-backdrop: blur(20px) saturate(180%);
+}
+
+/* 导航栏毛玻璃效果 */
+.VPNav {
+  background: var(--glass-bg) !important;
+  backdrop-filter: var(--glass-backdrop) !important;
+  -webkit-backdrop-filter: var(--glass-backdrop) !important;
+  border-bottom: 1px solid var(--glass-border) !important;
+  box-shadow: var(--glass-shadow) !important;
+}
+
+.VPNavBar {
+  background: transparent !important;
+}
+
+/* 侧边栏毛玻璃效果 */
+.VPSidebar {
+  background: var(--glass-bg) !important;
+  backdrop-filter: var(--glass-backdrop) !important;
+  -webkit-backdrop-filter: var(--glass-backdrop) !important;
+  border-right: 1px solid var(--glass-border) !important;
+  box-shadow: var(--glass-shadow) !important;
+}
+
+/* 搜索框毛玻璃效果 */
+.DocSearch-Button {
+  background: var(--glass-bg) !important;
+  backdrop-filter: blur(10px) !important;
+  -webkit-backdrop-filter: blur(10px) !important;
+  border: 1px solid var(--glass-border) !important;
+  box-shadow: 0 4px 16px rgba(0, 217, 255, 0.05) !important;
+  transition: all 0.3s ease !important;
+}
+
+.DocSearch-Button:hover {
+  background: rgba(0, 217, 255, 0.1) !important;
+  border-color: var(--vp-c-brand-1) !important;
+  box-shadow: 0 4px 20px rgba(0, 217, 255, 0.2) !important;
+}
+
+/* 内容区域毛玻璃效果 */
+.VPContent .container {
+  background: var(--glass-bg) !important;
+  backdrop-filter: blur(15px) !important;
+  -webkit-backdrop-filter: blur(15px) !important;
+  border-radius: 12px !important;
+  border: 1px solid var(--glass-border) !important;
+  box-shadow: var(--glass-shadow) !important;
+  margin: 2rem auto !important;
+  padding: 2rem !important;
+}
+
+/* 代码块毛玻璃效果 */
+.dark div[class*="language-"] {
+  background: rgba(0, 0, 0, 0.4) !important;
+  backdrop-filter: blur(10px) !important;
+  -webkit-backdrop-filter: blur(10px) !important;
+  border: 1px solid rgba(0, 217, 255, 0.3) !important;
+  border-radius: 8px !important;
+  box-shadow: 0 4px 16px rgba(0, 217, 255, 0.1) !important;
+}
+
+.dark div[class*="language-"] pre {
+  background: transparent !important;
+}
+
+/* 卡片效果 - Features */
+.VPFeature {
+  background: var(--glass-bg) !important;
+  backdrop-filter: blur(15px) !important;
+  -webkit-backdrop-filter: blur(15px) !important;
+  border: 1px solid var(--glass-border) !important;
+  border-radius: 12px !important;
+  box-shadow: var(--glass-shadow) !important;
+  transition: all 0.3s ease !important;
+}
+
+.VPFeature:hover {
+  background: rgba(0, 217, 255, 0.05) !important;
+  border-color: var(--vp-c-brand-1) !important;
+  box-shadow: 0 8px 32px rgba(0, 217, 255, 0.2) !important;
+  transform: translateY(-2px) !important;
+}
+
+/* 按钮毛玻璃效果 */
+.VPButton.brand {
+  background: var(--glass-bg) !important;
+  backdrop-filter: blur(10px) !important;
+  -webkit-backdrop-filter: blur(10px) !important;
+  border: 2px solid var(--vp-c-brand-1) !important;
+  box-shadow: 0 4px 16px rgba(0, 217, 255, 0.3) !important;
+  transition: all 0.3s ease !important;
+}
+
+.VPButton.brand:hover {
+  background: rgba(0, 217, 255, 0.1) !important;
+  box-shadow: 0 6px 20px rgba(0, 217, 255, 0.4) !important;
+  transform: translateY(-1px) !important;
+}
+
+/* 页脚毛玻璃效果 */
+.VPFooter {
+  background: var(--glass-bg) !important;
+  backdrop-filter: var(--glass-backdrop) !important;
+  -webkit-backdrop-filter: var(--glass-backdrop) !important;
+  border-top: 1px solid var(--glass-border) !important;
+  box-shadow: 0 -8px 32px rgba(0, 217, 255, 0.1) !important;
+}
+
+/* Hero区域特殊效果 */
+.VPHero {
+  position: relative;
+}
+
+.VPHero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at 30% 50%, rgba(0, 217, 255, 0.1) 0%, transparent 50%),
+              radial-gradient(circle at 70% 50%, rgba(0, 255, 136, 0.1) 0%, transparent 50%);
+  pointer-events: none;
+  z-index: -1;
+}
+
+/* 自定义滚动条 */
+.dark ::-webkit-scrollbar {
+  width: 8px;
+}
+
+.dark ::-webkit-scrollbar-track {
+  background: var(--glass-bg);
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: var(--glass-border);
+  border-radius: 4px;
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: var(--vp-c-brand-1);
+}
+
+/* 表格毛玻璃效果 */
+.dark table {
+  background: var(--glass-bg) !important;
+  backdrop-filter: blur(10px) !important;
+  -webkit-backdrop-filter: blur(10px) !important;
+  border: 1px solid var(--glass-border) !important;
+  border-radius: 8px !important;
+  overflow: hidden !important;
+}
+
+.dark th {
+  background: rgba(0, 217, 255, 0.1) !important;
+  border-color: var(--glass-border) !important;
+}
+
+.dark td {
+  border-color: var(--glass-border) !important;
+}
+
+/* 引用块毛玻璃效果 */
+.dark blockquote {
+  background: var(--glass-bg) !important;
+  backdrop-filter: blur(10px) !important;
+  -webkit-backdrop-filter: blur(10px) !important;
+  border-left: 4px solid var(--vp-c-brand-1) !important;
+  border-radius: 0 8px 8px 0 !important;
+  box-shadow: var(--glass-shadow) !important;
+}
+
