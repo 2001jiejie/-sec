@@ -26,7 +26,7 @@ jobs:
       # 安装 pnpm 并指定版本
       - uses: pnpm/action-setup@v3
         with:
-          version: 8.14.0
+          version: 10.17.1
 
       # 安装 Node.js，并开启 pnpm 缓存
       - name: Setup Node
