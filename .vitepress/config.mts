@@ -50,6 +50,7 @@ export default defineConfig({
       { text: "0x3 内网渗透", link: "/internal/" },
       { text: "0x4 Java安全", link: "/java/" },
       { text: "0x5 免杀", link: "/bypass/" },
+      { text: "📚 笔记", link: "/notes/" },
     ],
 
     sidebar: {
@@ -120,6 +121,17 @@ export default defineConfig({
             { text: "DLL劫持", link: "/bypass/dll-hijacking" },
             { text: "EDR对抗", link: "/bypass/edr-bypass" },
             { text: "AMSI绕过", link: "/bypass/amsi" },
+          ],
+        },
+      ],
+      '/notes/': [
+        {
+          text: "📚 我的笔记",
+          items: [
+            { text: "笔记首页", link: "/notes/" },
+            { text: "技术笔记", link: "/notes/tech/" },
+            { text: "学习记录", link: "/notes/study/" },
+            { text: "思考总结", link: "/notes/thoughts/" },
           ],
         },
       ],
