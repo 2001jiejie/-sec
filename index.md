@@ -5,27 +5,27 @@ layout: home
 hero:
   name: "阿杰sec"
   text: "网络安全技术分享"
-  tagline: 专注于渗透测试、漏洞挖掘、安全工具使用，让安全技术更易懂
+  tagline: 专注于渗透测试技术分享，从Web安全到内网渗透的实战指南
   actions:
     - theme: brand
-      text: 开始阅读
+      text: 开始学习
       link: /pentest/
     - theme: alt
-      text: 安全工具
-      link: /tools/
+      text: Web渗透基础
+      link: /pentest/web-basics
 
 features:
-  - title: 🔍 渗透测试
-    details: Web安全测试、内网渗透、移动端安全等实战技术分享，从基础到进阶的完整学习路径
-  - title: 🛡️ 漏洞挖掘 
-    details: SQL注入、XSS、CSRF等常见漏洞的原理分析和利用技巧，真实案例复现和防护建议
-  - title: ⚡ 安全工具
-    details: Burp Suite、Nmap、Metasploit等专业安全工具的使用教程，提高渗透测试效率
-  - title: 🎯 CTF题解
-    details: 各种CTF比赛的Writeup分享，包含Web、Pwn、Reverse、Crypto等多个方向
-  - title: 📚 学习笔记
-    details: 系统性的安全知识整理，从入门到精通的学习资料和经验总结
-  - title: 🔥 安全资讯
-    details: 最新的漏洞分析、安全事件追踪、技术趋势分析，保持对安全领域的敏锐嗅觉
+  - title: 🔍 Web渗透测试
+    details: 深入学习Web应用安全测试技术，包括SQL注入、XSS、CSRF等常见漏洞的发现和利用方法
+  - title: 🌐 内网渗透
+    details: 掌握内网横向移动技术，权限提升方法，以及持久化访问等高级渗透测试技能
+  - title: 📱 移动端安全
+    details: Android和iOS应用安全测试方法，移动端漏洞挖掘技术和安全防护措施
+  - title: 🛠️ 渗透工具
+    details: Burp Suite、Metasploit、Nmap等专业渗透测试工具的深度使用教程和实战技巧
+  - title: 📊 实战案例
+    details: 真实渗透测试案例分析，从信息收集到权限获取的完整攻击链复现和学习
+  - title: 🎯 技能提升
+    details: 系统化的渗透测试学习路径，从基础知识到高级技能的进阶指导和实践建议
 ---
 
