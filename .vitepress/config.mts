@@ -3,8 +3,9 @@ import { defineConfig } from "vitepress";
 export default defineConfig({
   title: "My Awesome Project",
   description: "A VitePress Site",
+  base: "/-sec/",
   // header标签里面插入的内容
-  head: [["link", { rel: "icon", href: "/favicon.ico" }]],
+  head: [["link", { rel: "icon", href: "/-sec/favicon.ico" }]],
   themeConfig: {
     // 网站的logo
     logo: "/logo.svg",
@@ -56,8 +57,6 @@ export default defineConfig({
     ],
     // 社交链接
     socialLinks: [{ icon: "github", link: "https://github.com/ChinaCarlos" }],
-    // 部署的时候需要注意该参数避免样式丢失
-    base: "/-sec/",
   },
 });
 
