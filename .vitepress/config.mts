@@ -2,7 +2,7 @@ import { defineConfig } from "vitepress";
 
 export default defineConfig({
   title: "阿杰sec - 渗透测试技术博客",
-  description: "专注于渗透测试技术分享，Web安全测试，内网渗透，移动端安全等实战内容",
+  description: "专注于渗透测试技术分享，Java安全，内网渗透，免杀对抗等实战内容",
   base: "/-sec/",
   appearance: 'dark', // 默认使用深色主题
   ignoreDeadLinks: true, // 忽略死链接检查，便于逐步添加内容
@@ -53,9 +53,9 @@ export default defineConfig({
         {
           text: "渗透测试",
           items: [
-            { text: "Web渗透基础", link: "/pentest/web-basics" },
+            { text: "Java安全", link: "/pentest/java-security" },
             { text: "内网渗透", link: "/pentest/internal-network" },
-            { text: "移动端安全", link: "/pentest/mobile-security" },
+            { text: "免杀对抗", link: "/pentest/av-evasion" },
           ],
         },
       ],
