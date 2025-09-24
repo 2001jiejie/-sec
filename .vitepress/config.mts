@@ -5,6 +5,7 @@ export default defineConfig({
   description: "专注于网络安全技术分享，渗透测试，漏洞挖掘，安全工具使用等内容",
   base: "/-sec/",
   appearance: 'dark', // 默认使用深色主题
+  ignoreDeadLinks: true, // 忽略死链接检查，便于逐步添加内容
   // header标签里面插入的内容
   head: [["link", { rel: "icon", href: "/-sec/favicon.ico" }]],
   themeConfig: {
